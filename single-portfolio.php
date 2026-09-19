@@ -44,7 +44,7 @@ $project_iner_img_src = wp_get_attachment_image( $project_iner_img, 'shotgear_po
                                 <div class="col-lg-4 col-sm-4">
                                     <div class="single_project_details">
                                         <div class="media">
-                                            <img src="<?php echo SHOTGEAR_DIR_ICON_IMG_URI . 'project_details_icon_1.svg'?>" class="mr-4" alt="project details icon 1">
+                                            <img src="<?php echo SHOTGEAR_DIR_ICON_IMG_URI . 'project_details_icon_1.svg'?>" class="me-4" alt="project details icon 1">
                                             <div class="media-body">
                                                 <?php 
                                                     echo '<h5 class="mt-0">'. esc_html__( 'Start Time', 'shotgear' ) . '</h5>';
@@ -64,7 +64,7 @@ $project_iner_img_src = wp_get_attachment_image( $project_iner_img, 'shotgear_po
                                 <div class="col-lg-4 col-sm-4">
                                     <div class="single_project_details">
                                         <div class="media">
-                                            <img src="<?php echo SHOTGEAR_DIR_ICON_IMG_URI . 'project_details_icon_2.svg'?>" class="mr-4" alt="project details icon 2">
+                                            <img src="<?php echo SHOTGEAR_DIR_ICON_IMG_URI . 'project_details_icon_2.svg'?>" class="me-4" alt="project details icon 2">
                                             <div class="media-body">
                                                 <?php 
                                                     echo '<h5 class="mt-0">'. esc_html__( 'Finish Time', 'shotgear' ) . '</h5>';
@@ -84,7 +84,7 @@ $project_iner_img_src = wp_get_attachment_image( $project_iner_img, 'shotgear_po
                                 <div class="col-lg-4 col-sm-4">
                                     <div class="single_project_details">
                                         <div class="media">
-                                            <img src="<?php echo SHOTGEAR_DIR_ICON_IMG_URI . 'project_details_icon_3.svg'?>" class="mr-4" alt="project details icon 3">
+                                            <img src="<?php echo SHOTGEAR_DIR_ICON_IMG_URI . 'project_details_icon_3.svg'?>" class="me-4" alt="project details icon 3">
                                             <div class="media-body">
                                                 <?php 
                                                     echo '<h5 class="mt-0">'. esc_html__( 'Address', 'shotgear' ) . '</h5>';
