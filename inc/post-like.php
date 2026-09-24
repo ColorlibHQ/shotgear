@@ -14,6 +14,7 @@ function shotgear_sl_enqueue_scripts() {
 
 	wp_localize_script( 'shotgear-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'like'    => esc_html__( 'Like', 'shotgear' ),
 		'unlike'  => esc_html__( 'Unlike', 'shotgear' )
 	) );
 }
