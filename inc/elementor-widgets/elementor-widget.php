@@ -294,15 +294,13 @@ if ( !class_exists( 'Shotgear_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', SHOTGEAR_DIR_ELEMENTOR . 'assets/js/jquery.ajaxchimp.min.js', array('jquery'), '1.0', true );
 
 
             // shotgear map custom js
-            wp_register_script( 'shotgear-map-custom', SHOTGEAR_DIR_ELEMENTOR . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'shotgear-map-custom', SHOTGEAR_DIR_ELEMENTOR . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
             // shotgear companion main js
-            wp_enqueue_script( 'shotgear', SHOTGEAR_DIR_ELEMENTOR . 'assets/js/shotgear-companion-main.js', array( 'jquery', 'jquery-ui-datepicker' ), '1.0', true );
+            wp_enqueue_script( 'shotgear', SHOTGEAR_DIR_ELEMENTOR . 'assets/js/shotgear-companion-main.js', array( 'shotgear-ui-js' ), '1.0-s2', true );
 
 
             wp_localize_script( 'shotgear', 'ajax_object',
