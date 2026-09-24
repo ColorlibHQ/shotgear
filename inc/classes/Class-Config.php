@@ -262,34 +262,6 @@
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'shotgear-jquery-nice-select-js',
-						'file' 			=> $jsPath.'jquery.nice-select.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'shotgear-jquery-counterup-js',
-						'file' 			=> $jsPath.'jquery.counterup.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'shotgear-instagram-feed-js',
-						'file' 			=> $jsPath.'jquery.instagramFeed.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'shotgear-waypoints-js',
-						'file' 			=> $jsPath.'waypoints.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
 						'handler'		=> 'shotgear-slick-min-js',
 						'file' 			=> $jsPath.'slick.min.js',
 						'dependency' 	=> array( 'jquery' ),
@@ -305,10 +277,17 @@
 					),
 
 					array(
+						'handler'		=> 'shotgear-ui-js',
+						'file' 			=> $jsPath.'colorlib-ui.js',
+						'dependency' 	=> array(),
+						'version' 		=> '2.1.1',
+						'in_footer' 	=> true
+					),
+					array(
 						'handler'		=> 'shotgear-custom',
 						'file' 			=> $jsPath.'custom.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> $this->shotgear_version,
+						'dependency' 	=> array( 'jquery', 'shotgear-ui-js' ),
+						'version' 		=> $this->shotgear_version . '-s1',
 						'in_footer' 	=> true
 					),
 
